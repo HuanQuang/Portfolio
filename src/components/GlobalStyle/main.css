@@ -1,0 +1,53 @@
+@import 'normalize.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Yanone Kaffeesatz';
+}
+i:hover {
+    cursor: Pointer;
+    opacity: 0.8;
+}
+a {
+    text-decoration: none;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.home {
+    background-image: linear-gradient(
+        to right top,
+        #7e79a8,
+        #736f9e,
+        #686694,
+        #5d5c8b,
+        #525381,
+        #544f7f,
+        #574c7d,
+        #5a487a,
+        #6c487c,
+        #7e487b,
+        #8e4778,
+        #9e4773
+    );
+}
+.text-active {
+    color: transparent;
+    background-image: linear-gradient(180deg, #5e72eb, #ff9190 56%, #fec195);
+    -webkit-background-clip: text;
+}
+.backgroundActive {
+    background: linear-gradient(#5e72eb, #ff9190 56%, #fec195);
+}
+.borderActive {
+    border-color: linear-gradient(180deg, #5e72eb, #ff9190 56%, #fec195);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
