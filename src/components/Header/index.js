@@ -9,8 +9,8 @@ function Header() {
         <div className="w-full h-[120px] pb-6 relative">
             <div className="pt-3.5 mx-8 flex justify-between items-center sm:mx-1">
                 <i className="fa-solid fa-code text-3xl p-1 text-white sm:hidden"></i>
-                <div className="flex items-center">
-                    <a href="https://www.facebook.com/Ymir.19/" className="mx-4 cursor-pointer">
+                <div className="flex items-center text-white">
+                    <a href="https://www.facebook.com/Ymir.19/" className="mx-4 cursor-pointer ">
                         <i className="fa-brands fa-square-facebook text-[30px] "></i>
                     </a>
                     <a href="https://www.instagram.com/ymir__97/" className="mx-4 cursor-pointer">
