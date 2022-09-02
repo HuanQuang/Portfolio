@@ -1,9 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Menu from '../Menu';
+
 function Header() {
-    const [visible, setVisible] = useState('none');
-    const show = () => setVisible('');
-    const hide = () => setVisible('none');
+    const [open, setOpen] = useState(false);
+    const hide = () => setOpen(false);
+    const show = () => setOpen(true);
+    useEffect(() => {
+        const handleEvent = () => {
+            if (window.scrollY >= 200 && open === true) {
+                hide();
+            }
+        };
+        window.addEventListener('scroll', handleEvent);
+    }, [open]);
 
     return (
         <div className="w-full h-[120px] pb-6 relative">
@@ -31,21 +40,23 @@ function Header() {
                     <i
                         className="fa-solid fa-bars bg-[#ff923e] text-xl text-white px-[10px] py-1 rounded-md h-9 sm:bg-transparent sm:text-3xl sm:py-0"
                         onClick={() => {
-                            if (visible == 'none') {
-                                show();
-                            }
+                            show();
                         }}
                     ></i>
                 </div>
             </div>
-            <div className="absolute top-0 right-0 animate-pulse animate-wiggle" id="menu" style={{ display: visible }}>
+            <div className={` absolute top-0 right-0 animate-pulse animate-wiggle ${open ? '' : 'hidden'}`}>
                 <i
                     className="fa-solid fa-xmark absolute text-[30px] p-1 text-white right-[16px]"
                     onClick={() => {
-                        hide();
+                        if (open) {
+                            hide();
+                        }
                     }}
                 ></i>
-                <Menu />
+                <div className="menu">
+                    <Menu />
+                </div>
             </div>
         </div>
     );
