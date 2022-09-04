@@ -12,6 +12,9 @@ function Header() {
             }
         };
         window.addEventListener('scroll', handleEvent);
+        return () => {
+            window.removeEventListener('scroll', handleEvent);
+        };
     }, [open]);
 
     return (
