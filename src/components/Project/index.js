@@ -7,8 +7,8 @@ function Project() {
             id: 1,
             name: 'PODCAST RADIO',
             img: Images.podcast,
-            sub: 'LISTEN TO PODCAST AND MUSIC',
-            tech: ['HTML, CSS, JAVASCRIPT'],
+            sub: 'Listen to podcast and music',
+            tech: ['Html, Css, Javascript'],
             bgColor: 'bg-[#252025]',
             linked: 'https://huanquang.github.io/podcast/',
         },
@@ -16,8 +16,8 @@ function Project() {
             id: 2,
             name: 'TETRIS GAME',
             img: Images.tetris,
-            sub: 'PLAYING TETRIS GAME BASIC',
-            tech: ['HTML, CSS, JAVASCRIPT'],
+            sub: 'Playing tetris game',
+            tech: ['Html, Css, Javascript'],
             bgColor: 'bg-[#473e4c]',
             linked: 'https://huanquang.github.io/Tetris-game/',
         },
@@ -25,10 +25,30 @@ function Project() {
             id: 3,
             name: 'MY PORTFOLIO',
             img: Images.portfolio,
-            sub: 'SOME INFOMATIONS ABOUT ME',
-            tech: ['HTML, CSS, JAVASCRIPT', 'REACT JS', ' TAILWINDCSS', 'TIPPY, AOS, TYPINGWRITER Lib'],
+            sub: 'Some information about',
+            tech: ['Html, Css, Javascript', 'React JS', ' TailwindCss', 'Tippy, Aos, Typingwriter'],
             bgColor: 'bg-[#2d2738]',
-            linked: 'https://portfolio-9719gwwnh-huanquang.vercel.app/',
+            linked: 'https://quanghuandev.vercel.app/',
+        },
+        {
+            id: 4,
+            name: 'Restaurant App',
+            img: Images.restaurant,
+            sub: 'A project to order foods',
+            tech: [
+                'Html, Css, Javascript',
+                'React JS',
+                'Scss',
+                'Material UI - Icon',
+                'Aos',
+                'Reduxjs/toolkit',
+                'axios',
+                'react-paginate',
+                'swiper',
+                'firebase (google-login)',
+            ],
+            bgColor: 'bg-[#2d2738]',
+            linked: 'https://restaurant-app-pbmi.vercel.app/',
         },
     ];
     return (
@@ -39,9 +59,9 @@ function Project() {
                     return (
                         <div
                             key={item.id}
-                            className={`flex mb-10 ${item.bgColor} p-8 justify-between rounded-lg sm:p-2 sm:flex-col`}
+                            className={`flex mb-10 ${item.bgColor} p-8 justify-around rounded-lg sm:p-2 sm:flex-col`}
                         >
-                            <img className="w-[58%] pr-3 sm:w-full p-1" src={item.img} alt=""></img>
+                            <img className="w-[58%] pr-3 sm:w-full p-1 h-[282px]" src={item.img} alt=""></img>
                             <div className="text-white text-left relative min-h-[250px] sm:min-h-[160px]">
                                 <h2 className="text-2xl text-[#ed6363] text-[30px] font-black pb-3 sm:text-sm">
                                     {item.name}

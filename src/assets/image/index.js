@@ -4,6 +4,7 @@ const Images = {
     podcast: require('../image/podcast.jpg'),
     tetris: require('../image/tetris.jpg'),
     portfolio: require('../image/portfolio.JPG'),
+    restaurant: require('../image/restaurant.JPG'),
     todo: require('../image/todo.JPG'),
     searchTag: require('../image/searchTag.JPG'),
     weather: require('../image/weather.JPG'),
@@ -11,6 +12,9 @@ const Images = {
     html: require('../image/html-1.svg').default,
     react: require('../image/react-2.svg').default,
     js: require('../image/javascript-1.svg').default,
+    sass: require('../image/sass.svg').default,
+    redux: require('../image/redux.svg').default,
+    mui: require('../image/mui.svg').default,
     tailwindcss: require('../image/tailwindcss.svg').default,
 };
 

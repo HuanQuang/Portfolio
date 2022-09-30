@@ -8,6 +8,9 @@ function Logo() {
         { name: 'JavaScript', link: Images.js },
         { name: 'React JS', link: Images.react },
         { name: 'TailwindCSS', link: Images.tailwindcss },
+        { name: 'SASS', link: Images.sass },
+        { name: 'MUI', link: Images.mui },
+        { name: 'REDUX', link: Images.redux },
     ];
 
     return (

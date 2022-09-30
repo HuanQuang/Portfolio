@@ -3,7 +3,7 @@ function PetProject() {
     const projects = [
         { img: Images.todo, link: 'https://huanquang.github.io/todoList/', style: 'fade-up-right' },
         { img: Images.weather, link: 'https://huanquang.github.io/weather-App/' },
-        { img: Images.searchTag, link: 'https://huanquang.github.io/SearchTag/', style: 'fade-up-left' },
+        { img: Images.searchTag, link: 'https://huanquang.github.io/SearchTag/', style: 'fade-up' },
     ];
     return (
         <div className="flex mt-11 justify-around w-[90%] mx-auto flex-wrap">
