@@ -30,7 +30,9 @@ function Introduce() {
                 ></img>
             </div>
             <div className="text-center mt-10">
-                <Button href="">Linked Resume</Button>
+                <Button href="https://www.topcv.vn/xem-cv/WgcHXFNSA1UBW11fWVUHU1JQBQtUXQpUAAAJUged35">
+                    Linked Resume
+                </Button>
             </div>
         </div>
     );
